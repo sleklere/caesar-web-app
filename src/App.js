@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import styles from "./App.module.css";
+import CaesarForm from "./Components/CaesarForm";
 
 function App() {
+  const [output, setOutput] = useState("Your output text");
+
+  const handleForm = function (formData) {
+    setOutput(formData.output);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <div className={styles["main-container"]}>
+        <h1 className={styles.title}>Caesar Cipher</h1>
+        <CaesarForm onSubmitForm={handleForm} />
+        <div className={styles.output}>
+          <p className={`${styles["output-title"]}`}>OUTPUT:</p>
+          <p>{output}</p>
+        </div>
+      </div>
     </div>
   );
 }
