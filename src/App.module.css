@@ -79,7 +79,7 @@ body {
   margin-top: 5rem;
 }
 
-.output {
+.output-div {
   font-size: 2rem;
   color: white;
   font-weight: 500;
@@ -89,6 +89,11 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.output {
+  padding: 5px;
+  background: linear-gradient(to top right, #fd9310 0%, #ff4512 100%);
 }
 
 .output-title {
