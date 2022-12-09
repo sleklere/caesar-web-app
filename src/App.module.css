@@ -1,13 +1,10 @@
 body {
-  /* background-color: #ebebeb; */
   height: 100vh;
   background-image: linear-gradient(
       rgba(34, 34, 34, 0.8),
       rgba(34, 34, 34, 0.8)
     ),
-    url("../public/alejandro-barba-vp-GzTh9Oek-unsplash.jpg");
-  /* background-size: cover; */
-  /* filter: blur(8px); */
+    url("../public/letters-background.jpg");
 }
 
 .app {

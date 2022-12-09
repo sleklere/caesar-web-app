@@ -53,8 +53,6 @@
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  /* box-shadow: 0 0 20px #eee; */
-  /* border-radius: 10px; */
   display: block;
   border: none;
   width: 100%;
@@ -63,6 +61,6 @@
 
 .btn-form:hover {
   cursor: pointer;
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; /* direction of the change */
   text-decoration: none;
 }
